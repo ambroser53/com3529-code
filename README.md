@@ -153,10 +153,10 @@ name prepended by its package name), as in the following example, from the Week
 
 ``mvn exec:java -Dexec.mainClass="uk.ac.shef.com3529.lectureexamples.ExecCalendar"``
 
-All the above examples are real examples taken from the repository, and should
-work "out of the box" without any problems if you have followed all the
-instructions as detailed here (and set everything up correctly, if you're using
-your own machine).
+All the above examples are real examples using this repository, and should work
+"out of the box" without any problems, assuming you have followed all the
+instructions detailed here, and set everything up correctly, if you're using
+your own machine.
 
 Maven puts all build files in a subdirectory called `target`. (If you fork this
 repository, bear in mind that this directory has been added to the `.gitignore`
