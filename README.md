@@ -146,9 +146,10 @@ want to run (`testGreaterThan1`) separated by a hash symbol:
 One of the main uses of Maven is to package up a Java application and its
 dependencies into a JAR file that can be independently run and distributed
 (using the `mvn package` command). However, we can use Maven to run specific
-classes (provided they have a `main` method of course) thanks to a plugin. The
-command required requires the fully qualified class name (i.e., the class name
-pre-pended by its package), as in the following (from the Week 1 lecture):
+classes – provided they have a `main` method, of course – thanks to a plugin.
+The command required requires the fully qualified class name (i.e., the class
+name prepended by its package name), as in the following example, from the Week
+1 lecture:
 
 ``mvn exec:java -Dexec.mainClass="uk.ac.shef.com3529.lectureexamples.ExecCalendar"``
 
