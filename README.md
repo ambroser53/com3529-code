@@ -33,14 +33,15 @@ below](#individual-machine-setups).
 ## Using Codio
 
 Our use of Codio will be limited in that we'll just be using the virtual boxes
-(we won't be doing any formal units, for example). To get a box going, go to
-https://www.codio.com/, click the "LOGIN" button, and login with your university
-email address and password. Click "My Projects" under the "BUILD" heading in the
-left sidebar. Then, click the blue "New Project" button in the top right. Click
-"Java 11" as your starting point. You can name your project whatever you like,
-but ensure that its visibility remains "Private". Then click "Create", and
-you're ready to go. When logging back into Codio later, you should always see
-your project listed under "My Projects".
+for ease of running and using this repository in a standardised setup and
+context. To get a box going, go to https://www.codio.com/, click the "LOGIN"
+button, and login with your university email address and password. Click "My
+Projects" under the "BUILD" heading in the left sidebar. Then, click the blue
+"New Project" button in the top right. Click "Java 11" as your starting point.
+You can name your project whatever you like, but ensure that its visibility
+remains "Private". Then click "Create", and you're ready to go. When logging
+back into Codio later, you should always see your project listed under "My
+Projects".
 
 ## Individual Machine Setups
 
