@@ -16,7 +16,7 @@ material, practical sessions, and the assignment.
 # Getting Started
 
 We will demonstrate everything using a virtual box on
-[Codio](https://www.codio.com/), for which you should already have a working
+[Codio](https://www.codio.com), for which you should already have a working
 account. All the required tools are already setup for you on Codio, so there is
 nothing to do if you are happy to work with your own virtual box there. We give
 the instructions for getting started with this in the [next section](#using-codio).
@@ -34,7 +34,7 @@ below](#individual-machine-setups).
 
 Our use of Codio will be limited in that we'll just be using the virtual boxes
 for ease of running and using this repository in a standardised setup and
-context. To get a box going, go to https://www.codio.com/, click the "LOGIN"
+context. To get a box going, go to https://www.codio.com, click the "LOGIN"
 button, and login with your university email address and password. Click "My
 Projects" under the "BUILD" heading in the left sidebar. Then, click the blue
 "New Project" button in the top right. Click "Java 11" as your starting point.
@@ -56,14 +56,14 @@ the following:
 * __Java 11__. We will be using Java Development Kit (JDK) 11 throughout the
   module, as the most recent long term support (LTS) version of Java released by
   Oracle. However, a more recent JDK should also work fine. Prebuilt OpenJDK
-  Binaries are available at https://adoptopenjdk.net/. If you already have one
+  Binaries are available at https://adoptopenjdk.net. If you already have one
   or more installations of Java on your machine, ensure that a Java 11
   installation (or later) is the default one used at the command line. For
   example, some browsers will install a Java Runtime Environment (JRE) on your
   machine, but this is insufficient for interacting with the code in this
   repository.
 * __Maven__. Maven is a build automation tool, package and dependency manager
-  for Java. It is available at https://maven.apache.org/. 
+  for Java. It is available at https://maven.apache.org. 
 
 ## Cloning the repository
 Open a terminal and change directory to somewhere appropriate on your system.
@@ -73,7 +73,7 @@ Then type:
 
 # Compiling and Running
 
-The code repository for the module uses [Maven](https://maven.apache.org/), a
+The code repository for the module uses [Maven](https://maven.apache.org), a
 build automation, package and dependency manager for Java. Maven makes it easy
 for us to use different tools and libraries (e.g., JUnit) without needing to
 download and install them individually, and having to ensure we have updated the
@@ -91,8 +91,8 @@ You will notice the repository has a number of top-level directories, e.g.
 `lecture-examples`, `assignment`, and so on. Each directory contains code that
 needs to be built and run separately using Maven. You can build these via the
 command line. If you're using your own machine, you can use an IDE to do this
-for you, e.g. [IntelliJ IDEA](https://www.jetbrains.com/idea/) or
-[Eclipse](https://www.eclipse.org/downloads/). However, we will assume that
+for you, e.g. [IntelliJ IDEA](https://www.jetbrains.com/idea) or
+[Eclipse](https://www.eclipse.org/downloads). However, we will assume that
 you're using the command line on Codio. 
 
 For instance to build the code in the examples directory, you first need to
