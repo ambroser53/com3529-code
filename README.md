@@ -10,7 +10,8 @@ material, practical sessions, and the assignment.
     * [Using Codio](#using-codio)
     * [Setting Up Your Own Machine](#setting-up-your-own-machine)
     * [Cloning and Forking this Repository](#cloning-and-forking-the-repository)
-* [Compiling and Running Code in the Repository](#compiling-and-running-code-in-the-repository)
+* [Compiling and Running Code in the
+  Repository](#compiling-and-running-code-in-the-repository)
 * [Problems or Feedback](#problems-or-feedback)
 
 # Getting Started
@@ -115,9 +116,9 @@ used to perform specific tasks with the project (e.g., running JUnit).
 
 Each directory, or project, contains code that needs to be built and run
 separately using Maven. You can build these via the command line. If you're
-using your own machine, you can use an IDE to do this for you, e.g. [IntelliJ
+using your own machine, you can use an IDE to do this for you (e.g., [IntelliJ
 IDEA](https://www.jetbrains.com/idea) or
-[Eclipse](https://www.eclipse.org/downloads). However, these instructions will
+[Eclipse](https://www.eclipse.org/downloads)). However, these instructions will
 assume that you're using the command line on Codio. 
 
 For instance, to build the examples in the lectures directory, you first need to
@@ -165,8 +166,7 @@ The command required requires the fully qualified class name (i.e., the class
 name prepended by its package name), as in the following example, from the Week
 1 lecture:
 
-``mvn exec:java
--Dexec.mainClass="uk.ac.shef.com3529.lectures.ExecCalendar"``
+``mvn exec:java -Dexec.mainClass="uk.ac.shef.com3529.lectures.ExecCalendar"``
 
 All the above examples are real examples using this repository, and should work
 "out of the box" without any problems, assuming you have followed all the
