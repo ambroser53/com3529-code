@@ -133,7 +133,7 @@ To compile all the classes in a project, issue the following Maven command.
 Note that the first time you run a Maven command, Maven may need to download and
 install any relevant dependent libraries from its central repository. You will
 see a lot of blurb appearing in your terminal window. Eventually, you should see
-a "BUILD SUCCESS" message.
+a "`BUILD SUCCESS'" message.
 
 To compile all of the tests, issue the Maven command:
 
