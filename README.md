@@ -148,6 +148,14 @@ work "out of the box" without any problems if you have followed all the
 instructions as detailed here (and set everything up correctly, if you're using
 your own machine).
 
+Maven puts all build files in a subdirectory called `target`. (If you fork this
+repository, bear in mind that this directory has been added to the `.gitignore`
+file and won't feature as part of any commits unless you remove it from there.)
+To reset the project (i.e., clear out the `target` subdirectory), issue the
+following command:
+
+``mvn clean``
+
 # Problems or Feedback
 
 We welcome any feedback or constructive criticism that you may have.
