@@ -149,7 +149,7 @@ can be run and distributed. However, we can use Maven to run specific classes
 required requires the fully qualified class name (i.e., the class name
 pre-pended by its package), as in the following (from the Week 1 lecture):
 
-``mvn exec:java -Dexec.mainClass="uk.ac.shef.com3529.lectureexamples.ExhaustivelyExecuteDaysBetweenTwoDates"``
+``mvn exec:java -Dexec.mainClass="uk.ac.shef.com3529.lectureexamples.ExecCalendar"``
 
 All the above examples are real examples taken from the repository, and should
 work "out of the box" without any problems if you have followed all the

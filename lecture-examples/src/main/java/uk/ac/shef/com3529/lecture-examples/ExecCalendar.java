@@ -1,8 +1,8 @@
 package uk.ac.shef.com3529.lectureexamples;
 
-public class ExhaustivelyExecuteDaysBetweenTwoDates {
+public class ExecCalendar {
 
-    private static void execute(int reportInterval) {
+    private static void exhaustivelyExecuteDaysBetweenTwoDates(int reportInterval) {
         long numTestsPerformed = 0;
         long startTime = System.currentTimeMillis();
 
@@ -33,7 +33,7 @@ public class ExhaustivelyExecuteDaysBetweenTwoDates {
     }
 
     public static void main(String[] args) {
-        execute(1000000);
+        exhaustivelyExecuteDaysBetweenTwoDates(1000000);
     }
 
 }
