@@ -18,7 +18,7 @@ We will demonstrate everything using a virtual box on
 [Codio](https://www.codio.com/), for which you should already have a working
 account. All the required tools are already setup for you on Codio, so there is
 nothing to do if you are happy to work with your own virtual box there. We give
-the instructions for getting started with this in the (next section)[].
+the instructions for getting started with this in the [next section](#using-codio).
 
 If you prefer to use your own machine, however, you will need to ensure all the
 tools we're using in the module are installed and setup on your system. (If I
@@ -26,7 +26,8 @@ was taking this module, this is what I would do! For your personal development I
 would suggest you at least attempt this.) Unfortunately, however, the teaching
 team does not have the resources to give help in setting everything up for each
 student's individual machine and configuration. Nevertheless, there is plenty of
-online help, pointers to which I give in (Section 2.3)[] below. 
+online help, pointers to which I give [in the section
+below](#individual-machine-setups). 
 
 ### Using Codio
 
