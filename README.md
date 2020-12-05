@@ -114,9 +114,15 @@ Model"). A `pom.xml` contains information about the project and its
 dependencies, and includes details about different Maven "plugins" that can be
 used to perform specific tasks with the project (e.g., running JUnit).
 
-Each directory, or project, contains code that needs to be built and run
-separately using Maven. You can build these via the command line. If you're
-using your own machine, you can use an IDE to do this for you (e.g., [IntelliJ
+Each directory, or project, contains code that needs to be built and run using
+Maven. This code lives in the `src` directory of each project. The `src`
+directory is further subdivided into two further subdirectories: `main` and
+`test`. The `main` directory is where the main code of the Java project lives,
+and `test` is where the tests reside. Maven keeps the two separate, although the
+classes contained in each can belong to the same packages.
+
+You can build these classes via the command line. If you're using your own
+machine, you can use an IDE to do this for you (e.g., [IntelliJ
 IDEA](https://www.jetbrains.com/idea) or
 [Eclipse](https://www.eclipse.org/downloads)). However, these instructions will
 assume that you're using the command line on Codio. 
