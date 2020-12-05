@@ -4,12 +4,12 @@ and Analysis" module at the University of Sheffield.
 
 Contents:
 
-* 1. Introduction
-* 2. Getting Started
-    * 2.1 Codio
-    * 2.2 Individual Machine Setups
-    * 2.3 Cloning this Repository
-* 3. Compiling and Running
+* Introduction
+* Getting Started
+    * Codio
+    * Individual Machine Setups
+    * Cloning this Repository
+* Compiling and Running
 
 ## 2. Getting Started
 
