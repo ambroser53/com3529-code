@@ -118,7 +118,7 @@ you're using the command line on Codio.
 For instance to build the code in the examples directory, you first need to
 change to that directory in the terminal:
 
-``cd lecture-examples``
+``cd lectureexamples``
 
 To compile all the examples, issue the following Maven command. 
 
@@ -136,12 +136,12 @@ To compile all the tests, issue the Maven command:
 To run all of the tests in an individual class, specify the test class
 (`TestIsPositive` in this example), as follows:
 
-``mvn -Dtest=TestIsPositive test``
+``mvn test -Dtest=TestIsPositive``
 
 To run a specific test, specify the test class, with the particular method you
 want to run (`testGreaterThan1`) separated by a hash symbol:
 
-``mvn -Dtest=TestIsPositive#testGreaterThan1 test``
+``mvn test -Dtest=TestIsPositive#testGreaterThan1``
 
 One of the main uses of Maven is to package up a Java application and its
 dependencies into a JAR file that can be independently run and distributed
@@ -151,7 +151,7 @@ plugin. The command required requires the fully qualified class name (i.e., the
 class name prepended by its package name), as in the following example, from the
 Week 1 lecture:
 
-``mvn -Dexec.mainClass="uk.ac.shef.com3529.lectureexamples.ExecCalendar" exec:java``
+``mvn exec:java -Dexec.mainClass="uk.ac.shef.com3529.lectureexamples.ExecCalendar"``
 
 All the above examples are real examples using this repository, and should work
 "out of the box" without any problems, assuming you have followed all the
