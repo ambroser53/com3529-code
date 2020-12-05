@@ -143,10 +143,11 @@ want to run (`testGreaterThan1`) separated by a hash symbol:
 
 ``mvn -Dtest=TestIsPositive#testGreaterThan1 test``
 
-One of the main uses of Maven is to build a JAR file for a Java application that
-can be run and distributed. However, we can use Maven to run specific classes
-(provided they have a `main` method of course) thanks to a plugin. The command
-required requires the fully qualified class name (i.e., the class name
+One of the main uses of Maven is to package up a Java application and its
+dependencies into a JAR file that can be independently run and distributed
+(using the `mvn package` command). However, we can use Maven to run specific
+classes (provided they have a `main` method of course) thanks to a plugin. The
+command required requires the fully qualified class name (i.e., the class name
 pre-pended by its package), as in the following (from the Week 1 lecture):
 
 ``mvn exec:java -Dexec.mainClass="uk.ac.shef.com3529.lectureexamples.ExecCalendar"``
