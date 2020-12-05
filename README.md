@@ -8,7 +8,7 @@ material, practical sessions, and the assignment.
 * [Introduction](#introduction)
 * [Getting Started](#getting-started)
     * [Using Codio](#using-codio)
-    * [Setting up Your Own Machine](#setting-up-your-own-machine)
+    * [Setting Up Your Own Machine](#setting-up-your-own-machine)
     * [Cloning and Forking this Repository](#cloning-and-forking-the-repository)
 * [Compiling and Running Code in the Repository](#compiling-and-running-code-in-the-repository)
 * [Problems or Feedback](#problems-or-feedback)
@@ -65,7 +65,7 @@ the following:
 * __Maven__. Maven is a build automation tool, package and dependency manager
   for Java. It is available at https://maven.apache.org. 
 
-## Cloning and Forking the repository
+## Cloning and Forking the Repository
 
 The easiest way to get a hold of these materials is to clone the repository. You
 can do this by opening a terminal and changing directory to somewhere
@@ -89,7 +89,6 @@ the ``Fork'' button in the top right-hand corner of the page. Then, follow the
 instructions that GitHub provides. More information and details about how to
 fork GitHub repositories is provided here:
 https://docs.github.com/en/free-pro-team@latest/github/getting-started-with-github/fork-a-repo.
-
 
 # Compiling and Running Code in the Repository
 
