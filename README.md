@@ -4,12 +4,12 @@ and Analysis" module at the University of Sheffield.
 
 Contents:
 
-* Introduction
-* Getting Started
-    * Codio
-    * Individual Machine Setups
-    * Cloning this Repository
-* Compiling and Running
+* [Introduction]()
+* [Getting Started](#2-getting-started)
+    * [Using Codio]()
+    * [Individual Machine Setups]()
+    * [Cloning this Repository]()
+* [Compiling and Running]()
 
 ## 2. Getting Started
 
@@ -27,7 +27,7 @@ team does not have the resources to give help in setting everything up for each
 student's individual machine and configuration. Nevertheless, there is plenty of
 online help, pointers to which I give in (Section 2.3)[] below. 
 
-### 2.1 Getting Started with Codio
+### 2.1 Using Codio
 
 Our use of Codio will be limited in that we'll just be using the virtual boxes
 --- we won't be doing any formal units, or any of that stuff. To get a box
