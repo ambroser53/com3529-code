@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: uk.ac.shef.com3529.lectureexamples.TestStringUtilsBuggy1
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0 s <<< FAILURE! - in uk.ac.shef.com3529.lectureexamples.TestStringUtilsBuggy1
+testNonRepeatedChar  Time elapsed: 0 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <false> but was: <true>
+	at uk.ac.shef.com3529.lectureexamples.TestStringUtilsBuggy1.testNonRepeatedChar(TestStringUtilsBuggy1.java:22)
+

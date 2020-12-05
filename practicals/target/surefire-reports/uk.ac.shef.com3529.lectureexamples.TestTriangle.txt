@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: uk.ac.shef.com3529.lectureexamples.TestTriangle
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.103 s <<< FAILURE! - in uk.ac.shef.com3529.lectureexamples.TestTriangle
+testScalene  Time elapsed: 0.093 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <SCALENE> but was: <INVALID>
+	at uk.ac.shef.com3529.lectureexamples.TestTriangle.testScalene(TestTriangle.java:16)
+

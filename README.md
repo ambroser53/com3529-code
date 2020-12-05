@@ -107,11 +107,11 @@ https://maven.apache.org/guides/getting-started/index.html and various
 tutorials, for example https://www.tutorialspoint.com/maven/index.htm.
 
 You will notice the repository has a number of top-level directories, e.g.
-`lecture-examples`, `assignment`, and so on. Each directory corresponds to a
-project, with it's own `pom.xml` file ("pom" stands for "Project Object Model").
-A `pom.xml` contains information about the project and its dependencies, and
-includes details about different Maven "plugins" that can be used to perform
-specific tasks with the project (e.g., running JUnit).
+`lectures`, `practicals`, `assignment`, and so on. Each directory corresponds to
+a project, with it's own `pom.xml` file ("pom" stands for "Project Object
+Model"). A `pom.xml` contains information about the project and its
+dependencies, and includes details about different Maven "plugins" that can be
+used to perform specific tasks with the project (e.g., running JUnit).
 
 Each directory, or project, contains code that needs to be built and run
 separately using Maven. You can build these via the command line. If you're
@@ -120,10 +120,10 @@ IDEA](https://www.jetbrains.com/idea) or
 [Eclipse](https://www.eclipse.org/downloads). However, these instructions will
 assume that you're using the command line on Codio. 
 
-For instance to build the code in the examples directory, you first need to
-change to that directory in the terminal:
+For instance, to build the examples in the lectures directory, you first need to
+change to that directory in the terminal. 
 
-``cd lectureexamples``
+``cd lectures``
 
 To compile all the classes in a project, issue the following Maven command. 
 
