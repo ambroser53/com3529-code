@@ -80,5 +80,4 @@ public class Calendar {
         int daysInMonthNonLeapYear[] = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
         return month == 2 && isLeapYear(year) ? 29 : daysInMonthNonLeapYear[month - 1];
     }
-
 }

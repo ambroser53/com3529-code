@@ -1,4 +1,4 @@
-package uk.ac.shef.com3529.examples;
+package uk.ac.shef.com3529.lectureexamples;
 
 public class SpaceDefender {
 

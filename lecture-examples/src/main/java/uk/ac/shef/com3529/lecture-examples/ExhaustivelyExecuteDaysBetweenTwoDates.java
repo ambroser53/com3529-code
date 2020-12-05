@@ -1,8 +1,8 @@
 package uk.ac.shef.com3529.lectureexamples;
 
-public class TestCalendar {
+public class ExhaustivelyExecuteDaysBetweenTwoDates {
 
-    private static void daysBetweenTwoDatesExhaustiveTest(int interval) {
+    private static void execute(int reportInterval) {
         long numTestsPerformed = 0;
         long startTime = System.currentTimeMillis();
 
@@ -17,7 +17,7 @@ public class TestCalendar {
                                 long timeElapsed = System.currentTimeMillis() - startTime;
                                 numTestsPerformed ++;
 
-                                if (numTestsPerformed % interval == 0) {
+                                if (numTestsPerformed % reportInterval == 0) {
                                     System.out.println(numTestsPerformed + ") " +
                                             day1 + "/" + month1 + "/" + year1 + " -> " +
                                             day2 + "/" + month2 + "/" + year2 + " " +
@@ -33,6 +33,7 @@ public class TestCalendar {
     }
 
     public static void main(String[] args) {
-        daysBetweenTwoDatesExhaustiveTest(1000000);
+        execute(1000000);
     }
+
 }
