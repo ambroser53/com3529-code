@@ -98,30 +98,42 @@ you're using the command line on Codio.
 For instance to build the code in the examples directory, you first need to
 change to that directory in the terminal:
 
-``cd examples``
+``cd lecture-examples``
 
-To compile all the examples, issue the Maven command:
+To compile all the examples, issue the following Maven command. 
 
 ``mvn compile``
+
+Note that the first time you run a Maven command, Maven may need to download and
+install any relevant dependent libraries from its central repository. You will
+see a lot of blurb appearing in your terminal window. Eventually, you should see
+a "BUILD SUCCESS" message.
 
 To compile all the tests, issue the Maven command:
 
 ``mvn test-compile``
 
-To run all of the tests in an individual class:
+To run all of the tests in an individual class, specify the test class
+(`TestIsPositive` in this example), as follows:
 
-``mvn -Dtest=PhilTest test``
+``mvn -Dtest=TestIsPositive test``
 
-To run a specific test:
+To run a specific test, specify the test class, with the particular method you
+want to run (`testGreaterThan1`) separated by a hash symbol:
 
-``mvn -Dtest=PhilTest#abEqual test``
+``mvn -Dtest=TestIsPositive#testGreaterThan1 test``
 
+All the above examples are real examples taken from the repository, and should
+work "out of the box" without any problems if you have followed all the
+instructions as detailed here (and set everything up correctly, if you're using
+your own machine).
 
 # Problems or Feedback
 
 We welcome any feedback or constructive criticism that you may have.
 
-If you have any problems, please contact the module lecturer, Phil McMinn.
-Please note that we are limited in the help that we can offer on specific system
-setups. If you are experiencing difficulties, please use Codio, where we can
-give you full support if you run into problems. 
+If you are experiencing problems with using the repository, please contact the
+module lecturer that owns it – [Phil McMinn](https://mcminn.io). Please note
+that the teaching team are limited in the help that we can offer on specific
+system setups. If you are experiencing significant difficulties, please use
+Codio, where we can give you full support if you run into problems. 
