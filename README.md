@@ -88,7 +88,7 @@ page of the repository (https://github.com/philmcminn/com3529-code) and click
 the ``Fork'' button in the top right-hand corner of the page. Then, follow the
 instructions that GitHub provides. More information and details about how to
 fork GitHub repositories is provided here:
-https://docs.github.com/en/free-pro-team@latest/github/getting-started-with-github/fork-a-repo
+https://docs.github.com/en/free-pro-team@latest/github/getting-started-with-github/fork-a-repo.
 
 
 # Compiling and Running
