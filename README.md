@@ -1,9 +1,9 @@
-## Introduction
+# Introduction
 Welcome to the "COM3529 Software Testing and Analysis" module at the University
 of Sheffield! This repository contains code examples to support the lecture
 material, practical sessions, and the assignment.
 
-Contents:
+### Contents:
 
 * [Introduction](#introduction)
 * [Getting Started](#getting-started)
@@ -13,7 +13,7 @@ Contents:
 * [Compiling and Running](#compiling-and-running)
 * [Problems or Feedback](#problems-or-feedback)
 
-## Getting Started
+# Getting Started
 
 We will demonstrate everything using a virtual box on
 [Codio](https://www.codio.com/), for which you should already have a working
@@ -30,7 +30,7 @@ student's individual machine and configuration. Nevertheless, there is plenty of
 online help, pointers to which I give [in the section
 below](#individual-machine-setups). 
 
-### Using Codio
+## Using Codio
 
 Our use of Codio will be limited in that we'll just be using the virtual boxes
 --- we won't be doing any formal units, or any of that stuff. To get a box
@@ -42,7 +42,7 @@ project whatever you like, but ensure that its visibility remains ``Private''.
 Then click ``Create'', and you're ready to go. When logging back into Codio
 later, you should always see your project listed under ``My Projects''.
 
-### Individual Machine Setups
+## Individual Machine Setups
 
 If you intend to use Codio only, you can ignore this section. 
 
@@ -62,13 +62,13 @@ the following:
 * __Maven__. Maven is a build automation tool, package and dependency manager
   for Java. It is available at https://maven.apache.org/. 
 
-### Cloning the repository
+## Cloning the repository
 Open a terminal and change directory to somewhere appropriate on your system.
 Then type:
 
 ``git clone git@github.com:philmcminn/com3529-code.git``
 
-## Compiling and Running
+# Compiling and Running
 
 The code repository for the module uses [Maven](https://maven.apache.org/), a
 build automation, package and dependency manager for Java. Maven makes it easy
@@ -114,7 +114,7 @@ To run a specific test:
 ``mvn -Dtest=PhilTest#abEqual test``
 
 
-## Problems or Feedback
+# Problems or Feedback
 
 We welcome any feedback or constructive criticism that you may have.
 
