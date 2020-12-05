@@ -1,6 +1,7 @@
 ## Introduction
-This repository contains code examples to support the "COM3529 Software Testing
-and Analysis" module at the University of Sheffield.
+Welcome to the "COM3529 Software Testing and Analysis" module at the University
+of Sheffield! This repository contains code examples to support the lecture
+material, practical sessions, and the assignment.
 
 Contents:
 
