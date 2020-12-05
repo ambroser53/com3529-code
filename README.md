@@ -50,7 +50,8 @@ If you intend to use Codio only, you can ignore this section.
 If you intend to set up your own machine for the module, however, you will need
 the following:
 
-* __Git__. You will need Git to clone this repository. See
+* __Git__. You will need Git to clone this repository. If you don't already have
+  it setup on your machine, you'll need to download and install it. See
   https://git-scm.com/book/en/v2/Getting-Started-Installing-Git.
 * __Java 11__. We will be using Java Development Kit (JDK) 11 throughout the
   module, as the most recent long term support (LTS) version of Java released by
