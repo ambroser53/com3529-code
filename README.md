@@ -8,9 +8,9 @@ material, practical sessions, and the assignment.
 * [Introduction](#introduction)
 * [Getting Started](#getting-started)
     * [Using Codio](#using-codio)
-    * [Individual Machine Setups](#individual-machine-setups)
+    * [Setting up Your Own Machine](#setting-up-your-own-machine)
     * [Cloning and Forking this Repository](#cloning-and-forking-the-repository)
-* [Compiling and Running](#compiling-and-running)
+* [Compiling and Running Code in the Repository](#compiling-and-running-code-in-the-repository)
 * [Problems or Feedback](#problems-or-feedback)
 
 # Getting Started
@@ -44,7 +44,7 @@ remains "Private". Then click "Create", and you're ready to go. When logging
 back into Codio later, you should always see your project listed under "My
 Projects".
 
-## Individual Machine Setups
+## Setting Up Your Own Machine
 
 If you intend to use Codio only, you can ignore this section. 
 
@@ -91,7 +91,7 @@ fork GitHub repositories is provided here:
 https://docs.github.com/en/free-pro-team@latest/github/getting-started-with-github/fork-a-repo.
 
 
-# Compiling and Running
+# Compiling and Running Code in the Repository
 
 The code repository for the module uses [Maven](https://maven.apache.org), a
 build automation, package and dependency manager for Java. Maven makes it easy
