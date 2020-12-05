@@ -166,7 +166,7 @@ name prepended by its package name), as in the following example, from the Week
 1 lecture:
 
 ``mvn exec:java
--Dexec.mainClass="uk.ac.shef.com3529.lectureexamples.ExecCalendar"``
+-Dexec.mainClass="uk.ac.shef.com3529.lectures.ExecCalendar"``
 
 All the above examples are real examples using this repository, and should work
 "out of the box" without any problems, assuming you have followed all the
