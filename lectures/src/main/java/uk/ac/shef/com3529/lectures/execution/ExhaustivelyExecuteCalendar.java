@@ -1,6 +1,8 @@
-package uk.ac.shef.com3529.lectures;
+package uk.ac.shef.com3529.lectures.execution;
 
-public class ExecCalendar {
+import uk.ac.shef.com3529.lectures.Calendar;
+
+public class ExhaustivelyExecuteCalendar {
 
     private static void exhaustivelyExecuteDaysBetweenTwoDates(int reportInterval) {
         long numTestsPerformed = 0;

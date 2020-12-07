@@ -172,7 +172,7 @@ The command required requires the fully qualified class name (i.e., the class
 name prepended by its package name), as in the following example, from the Week
 1 lecture:
 
-``mvn exec:java -Dexec.mainClass="uk.ac.shef.com3529.lectures.ExecCalendar"``
+``mvn exec:java -Dexec.mainClass="uk.ac.shef.com3529.lectures.execution.ExhaustivelyExecuteCalendar"``
 
 All the above examples are real examples using this repository, and should work
 "out of the box" without any problems, assuming you have followed all the

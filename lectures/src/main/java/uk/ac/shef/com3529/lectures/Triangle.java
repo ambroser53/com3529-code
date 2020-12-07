@@ -37,9 +37,7 @@ public class Triangle {
                     type = Type.EQUILATERAL;
                 }
             } else {
-                if (side1 == side2) {
-                    type = Type.ISOSCELES;
-                } else if (side2 == side3) {
+                if (side2 == side3) {
                     type = Type.ISOSCELES;
                 }
             }
