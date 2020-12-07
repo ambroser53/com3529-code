@@ -8,19 +8,18 @@ import java.util.TreeSet;
 
 public class RandomlyTestTriangle {
 
-    public static final int ITERATIONS = 100;
+    static final int ITERATIONS = 10000;
 
-    public static final int MIN_INT = Integer.MIN_VALUE;
-    public static final int MAX_INT = Integer.MAX_VALUE;
-
-    // public static final int MIN_INT = -10;
-    // public static final int MAX_INT = 10;
+    // static final int MIN_INT = Integer.MIN_VALUE;
+    // static final int MAX_INT = Integer.MAX_VALUE;
+    static final int MIN_INT = -10;
+    static final int MAX_INT = 10;
 
     public static void main(String[] args) {
         randomlyTestClassify();
     }
 
-    public static void randomlyTestClassify() {
+    static void randomlyTestClassify() {
         Random r = new Random();
         Set<Integer> coveredBranches = new TreeSet<>();
 
@@ -29,10 +28,12 @@ public class RandomlyTestTriangle {
             int side2 = randomInt(r);
             int side3 = randomInt(r);
             System.out.println((i+1) + ": [" + side1 + ", " + side2 + ", " + side3 + "]");
-            instrumentedClassify(side1, side2, side3, coveredBranches);
+            Type result = instrumentedClassify(side1, side2, side3, coveredBranches);
+            System.out.println("-> " + result);
+
         }
         System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
-        System.out.println("Branch Coverage: " + coveredBranches.size() + "/ 14");
+        System.out.println("Branch Coverage: " + coveredBranches.size() + "/14");
         System.out.println("Covered Branch IDs: " + coveredBranches);
         System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
     }
@@ -41,61 +42,68 @@ public class RandomlyTestTriangle {
         if (MIN_INT == Integer.MIN_VALUE && MAX_INT == Integer.MAX_VALUE) {
             return r.nextInt();
         } else {
-            return r.nextInt((MAX_INT - MIN_INT + 1) + MIN_INT);
+            return r.nextInt((MAX_INT - MIN_INT + 1)) + MIN_INT;
         }
     }
 
-    public static Type instrumentedClassify(int side1, int side2, int side3, Set<Integer> coveredBranches) {
+    static void coveredBranch(int id, Set<Integer> coveredBranches) {
+        if (!coveredBranches.contains(id)) {
+            System.out.println("* covered new branch: " + id);
+            coveredBranches.add(id);
+        }
+    }
+
+    static Type instrumentedClassify(int side1, int side2, int side3, Set<Integer> coveredBranches) {
         Type type;
 
         if (side1 > side2) {
-            coveredBranches.add(1);
+            coveredBranch(1, coveredBranches);
             int temp = side1;
             side1 = side2;
             side2 = temp;
         } else {
-            coveredBranches.add(2);
+            coveredBranch(2, coveredBranches);
         }
 
         if (side1 > side3) {
-            coveredBranches.add(3);
+            coveredBranch(3, coveredBranches);
             int temp = side1;
             side1 = side3;
             side3 = temp;
         } else {
-            coveredBranches.add(4);
+            coveredBranch(4, coveredBranches);
         }
 
         if (side2 > side3) {
-            coveredBranches.add(5);
+            coveredBranch(5, coveredBranches);
             int temp = side2;
             side2 = side3;
             side3 = temp;
         } else {
-            coveredBranches.add(6);
+            coveredBranch(6, coveredBranches);
         }
 
         if (side1 + side2 <= side3) {
-            coveredBranches.add(7);
+            coveredBranch(7, coveredBranches);
             type = Type.INVALID;
         } else {
-            coveredBranches.add(8);
+            coveredBranch(8, coveredBranches);
             type = Type.SCALENE;
             if (side1 == side2) {
-                coveredBranches.add(9);
+                coveredBranch(9, coveredBranches);
                 if (side2 == side3) {
-                    coveredBranches.add(11);
+                    coveredBranch(10, coveredBranches);
                     type = Type.EQUILATERAL;
                 } else {
-                    coveredBranches.add(12);
+                    coveredBranch(11, coveredBranches);
                 }
             } else {
-                coveredBranches.add(10);
+                coveredBranch(12, coveredBranches);
                 if (side2 == side3) {
-                    coveredBranches.add(13);
+                    coveredBranch(13, coveredBranches);
                     type = Type.ISOSCELES;
                 } else {
-                    coveredBranches.add(14);
+                    coveredBranch(14, coveredBranches);
                 }
             }
         }

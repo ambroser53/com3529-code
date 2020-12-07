@@ -4,7 +4,13 @@ import uk.ac.shef.com3529.lectures.Calendar;
 
 public class ExhaustivelyExecuteCalendar {
 
-    private static void exhaustivelyExecuteDaysBetweenTwoDates(int reportInterval) {
+    static final int REPORT_INTERVAL = 1000000;
+
+    public static void main(String[] args) {
+        exhaustivelyExecuteDaysBetweenTwoDates();
+    }
+
+    static void exhaustivelyExecuteDaysBetweenTwoDates() {
         long numTestsPerformed = 0;
         long startTime = System.currentTimeMillis();
 
@@ -19,7 +25,7 @@ public class ExhaustivelyExecuteCalendar {
                                 long timeElapsed = System.currentTimeMillis() - startTime;
                                 numTestsPerformed ++;
 
-                                if (numTestsPerformed % reportInterval == 0) {
+                                if (numTestsPerformed % REPORT_INTERVAL == 0) {
                                     System.out.println(numTestsPerformed + ") " +
                                             day1 + "/" + month1 + "/" + year1 + " -> " +
                                             day2 + "/" + month2 + "/" + year2 + " " +
@@ -34,8 +40,6 @@ public class ExhaustivelyExecuteCalendar {
         }
     }
 
-    public static void main(String[] args) {
-        exhaustivelyExecuteDaysBetweenTwoDates(1000000);
-    }
+
 
 }
