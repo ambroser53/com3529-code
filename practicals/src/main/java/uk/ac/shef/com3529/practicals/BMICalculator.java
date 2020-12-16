@@ -24,4 +24,8 @@ public class BMICalculator {
             return Type.OBESE;
         }
     }
+
+    public static void main(String[] args) {
+        System.out.println(calculate(182, 6, 0));
+    }
 }
