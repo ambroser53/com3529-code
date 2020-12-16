@@ -1,4 +1,4 @@
-package uk.ac.shef.com3529.lectures;
+package uk.ac.shef.com3529.practicals;
 
 public class BMICalculator {
 
@@ -23,9 +23,5 @@ public class BMICalculator {
         } else {
             return Type.OBESE;
         }
-    }
-
-    public static void main(String[] args) {
-        System.out.println(calculate(182, 6, 0));
     }
 }
