@@ -17,7 +17,7 @@ public class StringUtilsBuggy1 {
             char si = s.charAt(i);
 
             // iterate through the rest of the string, checking for the same letter
-            for (int j = i; j < s.length(); j++) {
+            for (int j = i+1; j < s.length(); j++) {
                 char sj = s.charAt(j);
 
                 if (si == sj) {
@@ -29,11 +29,4 @@ public class StringUtilsBuggy1 {
 
         return duplicates;
     }
-
-
-    public static void main(String[] args) {
-        System.out.println(duplicateLetters("software testing"));
-        System.out.println(duplicateLetters("software debugging"));
-    }
-
 }
