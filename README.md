@@ -73,7 +73,7 @@ can do this by opening a terminal and changing directory to somewhere
 appropriate on your system (on Codio, the default `workspace` directory is just
 fine):
 
-``git clone git@github.com:philmcminn/com3529-code.git``
+``git clone https://github.com/philmcminn/com3529-code.git``
 
 However, during the practicals and as part of the assignment, you will be adding
 your own code, which you are likely to want to backup somewhere, likely in a
