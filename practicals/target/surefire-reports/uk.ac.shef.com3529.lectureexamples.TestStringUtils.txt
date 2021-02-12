@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: uk.ac.shef.com3529.lectureexamples.TestStringUtils
--------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in uk.ac.shef.com3529.lectureexamples.TestStringUtils
