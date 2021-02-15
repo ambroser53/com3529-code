@@ -16,6 +16,15 @@ public class Week1 {
         return -1;
     }
 
+    public static int fixedFindLast(int[] x, int y) {
+        for (int i = x.length - 1; i >= 0; i--) {
+            if (x[i] == y) {
+                return i;
+            }
+        }
+        return -1;
+    }
+
     /*
      *  If x == null throw a NullPointerException, else return
      *  the number of positive elements in x.
@@ -29,6 +38,16 @@ public class Week1 {
         }
         return count;
     }
+    public static int fixedCountPositive(int[] x) {
+        int count = 0;
+        for (int i = 0; i < x.length; i++) {
+            if (x[i] > 0) {
+                count++;
+            }
+        }
+        return count;
+    }
+
 
     /*
      *  If x == null throw a NullPointerException, else return
@@ -37,6 +56,15 @@ public class Week1 {
      */
     public static int lastZero(int[] x) {
         for (int i = 0; i < x.length; i++) {
+            if (x[i] == 0) {
+                return i;
+            }
+        }
+        return -1;
+    }
+
+    public static int fixedLastZero(int[] x) {
+        for (int i = x.length - 1; i >= 0; i--) {
             if (x[i] == 0) {
                 return i;
             }
@@ -53,6 +81,16 @@ public class Week1 {
         int count = 0;
         for (int i = 0; i < x.length; i++) {
             if (x[i] % 2 == 1 || x[i] > 0) {
+                count++;
+            }
+        }
+        return count;
+    }
+
+    public static int fixedOddOrPos(int[] x) {
+        int count = 0;
+        for (int i = 0; i < x.length; i++) {
+            if (x[i] % 2 == 1 || x[i] % 2 == -1 || x[i] > 0) {
                 count++;
             }
         }
