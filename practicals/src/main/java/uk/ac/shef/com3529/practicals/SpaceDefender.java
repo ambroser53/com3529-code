@@ -1,4 +1,4 @@
-package uk.ac.shef.com3529.lectures;
+package uk.ac.shef.com3529.practicals;
 
 public class SpaceDefender {
 
