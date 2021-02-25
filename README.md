@@ -9,7 +9,7 @@ material, practical sessions, and the assignment.
 * [Getting Started](#getting-started)
     * [Using Codio](#using-codio)
     * [Setting Up Your Own Machine](#setting-up-your-own-machine)
-    * [Cloning and Forking this Repository](#cloning-and-forking-the-repository)
+    * [Cloning the Repository](#cloning-the-repository)
 * [Compiling and Running Code in the
   Repository](#compiling-and-running-code-in-the-repository)
 * [Problems or Feedback](#problems-or-feedback)
