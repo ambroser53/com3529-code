@@ -38,4 +38,26 @@ public class TestTriangle {
     public void testScalene1Biggest3Smallest() {
         assertEquals(Triangle.Type.SCALENE, Triangle.classify(5,4,2));
     }
+
+    //restricted MCDC test suite
+    @Test
+    public void testCondition1T() {
+        assertEquals(Triangle.Type.ISOSCELES, Triangle.classify(1,2,2));
+    }
+
+    //infeasible because side1+side2 cannot be <= side3 and side2 == side3 unless side1 == 0
+    @Test
+    public void testCondition1F() {assertEquals(Triangle.Type.INVALID, Triangle.classify(0,2,2));}
+
+    //testCondition2T is infeasible as side1 == side2 and side1 != side2 are incompatible
+
+    //testCondition2F is infeasible because side2 == side3 and side2 != side3 cant both be false
+
+    @Test
+    public void testCondition3T() {
+        assertEquals(Triangle.Type.ISOSCELES, Triangle.classify(1,2,2));
+    }
+
+    //testCondition3F is infeasible because side2 == side3 and side2 != side3 cant both be false
+
 }

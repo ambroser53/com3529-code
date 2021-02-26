@@ -156,7 +156,7 @@ public class TestWeek1 {
         // anything where y is the first element in x and does not appear
         // later in the array
         int[] x = {1, 0};
-        assertEquals(0, findLast(x, 1));
+        assertEquals(0, Week1.findLast(x, 1));
     }
     // (b) A JUnit test case that does not execute the fault
     @Test
@@ -164,7 +164,7 @@ public class TestWeek1 {
         // anything that does not execute the loop test,
         // so a null x (throws a NullPointerException before loop is executed)
         assertThrows(NullPointerException.class, () -> {
-            findLast(null, 1);
+            Week1.findLast(null, 1);
         });
     }
     // (c) A JUnit test case that executes the fault but does not infect the program state
@@ -174,7 +174,7 @@ public class TestWeek1 {
         // but is equal to an element where the index > 1 (so that no infection occurs)
         // the fault (the loop test) is executed, but the state is not infected
         int[] x = {0, 1};
-        assertEquals(1, findLast(x, 1));
+        assertEquals(1, Week1.findLast(x, 1));
     }
     /**  (d) Infection but no failure
     @Test
@@ -197,21 +197,21 @@ public class TestWeek1 {
     public void testCountPositiveFails() {
         // anything that has an element of x that is 0
         int[] x = {0};
-        assertEquals(0, countPositive(x));
+        assertEquals(0, Week1.countPositive(x));
     }
     // (b) A JUnit test case that does not execute the fault
     @Test
     public void testCountPositiveDoesNotExecuteFault() {
         // Anything that does not enter the loop body, so an empty array
         int[] x = {};
-        assertEquals(0, countPositive(x));
+        assertEquals(0, Week1.countPositive(x));
     }
     // (c) A JUnit test case that executes the fault but does not infect the program state
     @Test
     public void testCountPositiveExecutesFaultDoesNotInfectState() {
         // Anything that does enters the loop body, but is != 0
         int[] x = {-1, 1};
-        assertEquals(1, countPositive(x));
+        assertEquals(1, Week1.countPositive(x));
     }
     // (d) Infection but no failure
     // Not possible – the state is infected when an element of x = 0
@@ -228,14 +228,14 @@ public class TestWeek1 {
     public void testLastZeroFails() {
         // anything that has more than one zero in x
         int[] x = {0, 0};
-        assertEquals(1, lastZero(x));
+        assertEquals(1, Week1.lastZero(x));
     }
     // (b) A JUnit test case that does not execute the fault
     @Test
     public void testLastZeroDoesNotExecuteFault() {
         // Anything that does not begin iterating, so a null array
         assertThrows(NullPointerException.class, () -> {
-            lastZero(null);
+            Week1.lastZero(null);
         });
     }
     // (c) A JUnit test case that executes the fault but does not infect the program state
@@ -243,14 +243,14 @@ public class TestWeek1 {
     public void testLastZeroExecutesFaultDoesNotInfectState() {
         // x with one element that is zero
         int[] x = {0};
-        assertEquals(0, lastZero(x));
+        assertEquals(0, Week1.lastZero(x));
     }
     // (d) Infection but no failure
     @Test
     public void testLastZeroInfectionButNoFailrue() {
         // x with more than one element, has a zero that is the first and the last
         int[] x = {1, 0};
-        assertEquals(1, lastZero(x));
+        assertEquals(1, Week1.lastZero(x));
     }
 
     // oddOrPos
@@ -262,14 +262,14 @@ public class TestWeek1 {
     public void testOddOrPosFails() {
         // anything that has an negative odd element
         int[] x = {-1};
-        assertEquals(1, oddOrPos(x));
+        assertEquals(1, Week1.oddOrPos(x));
     }
     // (b) A JUnit test case that does not execute the fault
     @Test
     public void testOddOrPosDoesNotExecuteFault() {
         // Anything that does not begin iterating, so a null or zero-lengthed array
         assertThrows(NullPointerException.class, () -> {
-            oddOrPos(null);
+            Week1.oddOrPos(null);
         });
     }
     // (c) A JUnit test case that executes the fault but does not infect the program state
@@ -277,7 +277,7 @@ public class TestWeek1 {
     public void testOddOrPosExecutesFaultDoesNotInfectState() {
         // x with any elements that are not negative and odd
         int[] x = {0};
-        assertEquals(0, oddOrPos(x));
+        assertEquals(0, Week1.oddOrPos(x));
     }
     // (d) Infection but no failure
     // Not possible – the state is infected when an element of x is negative odd,
