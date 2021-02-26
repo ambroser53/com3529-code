@@ -9,7 +9,7 @@ material, practical sessions, and the assignment.
 * [Getting Started](#getting-started)
     * [Using Codio](#using-codio)
     * [Setting Up Your Own Machine](#setting-up-your-own-machine)
-    * [Cloning and Forking this Repository](#cloning-and-forking-the-repository)
+    * [Cloning the Repository](#cloning-the-repository)
 * [Compiling and Running Code in the
   Repository](#compiling-and-running-code-in-the-repository)
 * [Problems or Feedback](#problems-or-feedback)
@@ -66,7 +66,7 @@ the following:
 * __Maven__. Maven is a build automation tool, package and dependency manager
   for Java. It is available at https://maven.apache.org. 
 
-## Cloning and Forking the Repository
+## Cloning the Repository
 
 The easiest way to get a hold of these materials is to clone the repository. You
 can do this by opening a terminal and changing directory to somewhere
@@ -74,22 +74,6 @@ appropriate on your system (on Codio, the default `workspace` directory is just
 fine):
 
 ``git clone https://github.com/philmcminn/com3529-code.git``
-
-However, during the practicals and as part of the assignment, you will be adding
-your own code, which you are likely to want to backup somewhere, likely in a
-repository of your own. The best thing then, is to fork the repository. This
-means that, in effect, you make your own Git repository that's initialised with
-the contents of this one. While the original repository will prevent you from
-making any direct changes to it – because you will not have the appropriate
-permissions – you can of course do what you like to your own repository.
-
-You can fork the repository by signing into GitHub with your own account (you'll
-need to create one if you do not have one already, of course), go to the home
-page of the repository (https://github.com/philmcminn/com3529-code) and click
-the ``Fork'' button in the top right-hand corner of the page. Then, follow the
-instructions that GitHub provides. More information and details about how to
-fork GitHub repositories is provided here:
-https://docs.github.com/en/free-pro-team@latest/github/getting-started-with-github/fork-a-repo.
 
 # Compiling and Running Code in the Repository
 
